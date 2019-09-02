@@ -8,4 +8,3 @@
 @interface NativeLibrary : NSObject <RCTBridgeModule>
 
 @end
-  
