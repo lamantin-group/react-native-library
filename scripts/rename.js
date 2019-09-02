@@ -4,7 +4,7 @@ const libraryNativeName = 'CustomNativeStuff'
 
 const path = require('path')
 const fs = require('fs')
-const replace = require('./replace-in-file')
+const replace = require('./replace-in-file/index')
 
 const files = [
   'example/.babelrc',
