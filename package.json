@@ -18,7 +18,8 @@
     "install:deps": "npm install && cd example && npm install",
     "doctor": "rm -rf node_modules && rm -f package-lock.json && rm -rf example/node_modules && rm -f example/package-lock.json && npm install && cd example && npm install",
     "git:reset": "rm -rf .git && git init && git add -A && git commit -m 'Initial commit'",
-    "android": "cd example && npm run android"
+    "android": "cd example && npm run android",
+    "ios": "cd example && npm run ios"
   },
   "peerDependencies": {
     "react-native": "^0.41.2"
@@ -26,6 +27,8 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.2.2",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.1.0",
     "eslint-config-react": "^1.1.7",

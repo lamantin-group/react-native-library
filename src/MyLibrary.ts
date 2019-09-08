@@ -20,7 +20,7 @@ export class MyLibrary {
     return result
   }
 
-  static async putValue(number: number) {
-    console.log(number)
+  static async showMessage(text: string) {
+    console.log(text)
   }
 }
