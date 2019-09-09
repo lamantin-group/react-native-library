@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 
-import MyLibrary from 'react-native-library'
+import { MyLibrary } from 'react-native-library'
 
 const Button = props => {
   return (<TouchableOpacity
@@ -70,7 +70,7 @@ const App = () => {
           <Button 
             text={"MyLibrary.putValue(3)"}
             onPress={async () => {
-              Alert.alert('Warning', JSON.stringify(await MyLibrary.putValue(3)));
+              Alert.alert('Warning', JSON.stringify(await MyLibrary.showMessage("Hello")));
             }}
           />
         </ScrollView>

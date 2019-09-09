@@ -1,3 +1,3 @@
-import { MyLibrary } from './src/MyLibrary'
+export * from './src/MyLibrary'
 
-export default MyLibrary
+// export default MyLibrary
