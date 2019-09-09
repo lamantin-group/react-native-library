@@ -21,6 +21,7 @@ export class MyLibrary {
   }
 
   static async showMessage(text: string) {
-    console.log(text)
+    // console.warn(text)
+    alert(text)
   }
 }

@@ -41,7 +41,12 @@ const App = () => {
             </View>
           )}
 
-          <Button text={'Test sample'} />
+          <Button
+            text={'Test sample'}
+            onPress={() => {
+              MyLibrary.showMessage('Clicked on Test sample')
+            }}
+          />
         </ScrollView>
       </SafeAreaView>
     </View>
