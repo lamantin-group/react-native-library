@@ -10,7 +10,7 @@
     "ios": "react-native run-ios --simulator='iPhone SE'"
   },
   "dependencies": {
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-native": "0.60.5"
   },
   "devDependencies": {

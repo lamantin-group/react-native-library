@@ -22,6 +22,7 @@
     "ios": "cd example && npm run ios"
   },
   "peerDependencies": {
+    "react": "^16.9.0",
     "react-native": "^0.41.2"
   },
   "devDependencies": {

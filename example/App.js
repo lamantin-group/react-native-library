@@ -26,19 +26,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 
-import { MyLibrary } from 'react-native-library'
-
-const Button = props => {
-  return (<TouchableOpacity
-    style={{
-      height: 100,
-      backgroundColor: '#f4f4f4',
-      alignItems: 'center',
-    }}
-    onPress={props.onPress}>
-    <Text>{props.text}</Text>
-  </TouchableOpacity>)
-}
+import { MyLibrary, Button } from 'react-native-library'
 
 const App = () => {
   return (
@@ -53,26 +41,7 @@ const App = () => {
             </View>
           )}
 
-          <Button 
-            text={"MyLibrary.getParams()"}
-            onPress={async () => {
-              Alert.alert('Warning', JSON.stringify(await MyLibrary.getParams()));
-            }}
-          />
-
-          <Button 
-            text={"MyLibrary.getValue()"}
-            onPress={async () => {
-              Alert.alert('Warning', JSON.stringify(await MyLibrary.getValue()));
-            }}
-          />
-
-          <Button 
-            text={"MyLibrary.putValue(3)"}
-            onPress={async () => {
-              Alert.alert('Warning', JSON.stringify(await MyLibrary.showMessage("Hello")));
-            }}
-          />
+          <Button text={'Test sample'} />
         </ScrollView>
       </SafeAreaView>
     </View>
