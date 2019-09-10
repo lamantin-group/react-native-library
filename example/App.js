@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, { Fragment } from 'react'
 import {
   SafeAreaView,
@@ -42,9 +34,9 @@ const App = () => {
           )}
 
           <Button
-            text={'Test sample'}
+            text="Test button"
             onPress={() => {
-              MyLibrary.showMessage('Clicked on Test sample')
+              MyLibrary.showMessage('Clicked on Test button')
             }}
           />
         </ScrollView>
