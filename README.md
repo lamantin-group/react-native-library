@@ -51,6 +51,8 @@ Common
 - [x] Autocomplete for library support in example folder
 - [x] TypeScript for library development
 - [x] Rename library possibility
+- [x] Automatically generating typings
+- [x] .npmignore publish template
 - [ ] Hot reloading for example (working only reloading)
 - [ ] CI for checking build status
 
