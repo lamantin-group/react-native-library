@@ -12,7 +12,7 @@
   "keywords": [
     "react-native"
   ],
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "react-native start",
     "doctor": "npm run doctor:remove && npm run doctor:install",
