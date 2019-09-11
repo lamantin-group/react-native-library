@@ -44,14 +44,12 @@ Roadmap
 
 Common
 - [x] TypeScript for library and example
-- [x] Automatically generating typings when publish
-- [x] VSCode full support
-- [x] ESLint for library
-- [x] ESLint for example
-- [x] Working example folder
-- [x] Hot library replacement in development 
-- [x] Autocomplete in example folder
+- [x] Properly configured example for library
+- [x] Autocomplete is working
+- [x] ESLint and Prettier
 - [x] .npmignore publish template
+- [x] Automatically generating typings when publish
+- [x] Hot library replacement in development 
 - [x] MIT License template
 - [ ] Hot reloading for example (working only reloading)
 - [ ] CI for checking build status
