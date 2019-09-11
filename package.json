@@ -1,19 +1,19 @@
 {
   "name": "react-native-library",
   "version": "1.0.0",
-  "author": "whalemare",
+  "author": "lamantin",
   "description": "Library bootstrap",
-  "license": "Apache 2.0",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whalemare/react-native-library.git",
-    "start:first": "npm i && cd example && npm i && npm run android"
+    "url": "git+https://github.com/USERNAME/REPOSITORY.git"
   },
   "keywords": [
     "react-native"
   ],
   "main": "index.ts",
   "scripts": {
+    "prepublish": "tsc",
     "start": "react-native start",
     "doctor": "npm run doctor:remove && npm run doctor:install",
     "doctor:remove": "rm -rf node_modules && rm -f package-lock.json && rm -rf example/node_modules && rm -f example/package-lock.json && rm -f example/ios/Podfile.lock && rm -rf example/ios/Pods && rm -rf example/ios/build",
