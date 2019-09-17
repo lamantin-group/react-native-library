@@ -9,7 +9,8 @@
     "url": "git+https://github.com/USERNAME/REPOSITORY.git"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "react-native-library"
   ],
   "main": "index.ts",
   "types": "build/index.d.ts",
