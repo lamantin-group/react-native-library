@@ -12,6 +12,7 @@
     "react-native"
   ],
   "main": "index.ts",
+  "types": "build/index.d.ts",
   "scripts": {
     "prepublish": "tsc",
     "start": "react-native start",
