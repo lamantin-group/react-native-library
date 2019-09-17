@@ -1,17 +1,12 @@
-# Logs
 *.log
 npm-debug.log
 
-# Runtime data
 tmp
-build
 dist
 
-# Dependency directory
 node_modules
 Pods
 
-# Environment
 .vscode
 .idea
 .eslintrc.js
@@ -20,11 +15,7 @@ Pods
 .npmignore
 .prettierrc
 
-# Build configs
-.build
 .gradle
 
-# Example
 example
-local.properties
 scripts
