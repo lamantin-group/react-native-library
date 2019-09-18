@@ -8,10 +8,9 @@
  * @format
  */
 
-import React, { Component, Fragment } from 'react'
-import { StatusBar, Text, View, StyleSheet, Alert, NativeModules, SafeAreaView } from 'react-native'
-import { Button } from 'react-native-library'
-import { MyLibrary } from '../src/MyLibrary'
+import React, { Component } from 'react'
+import { Alert, NativeModules, SafeAreaView, StatusBar, StyleSheet, Text } from 'react-native'
+import { Button, MyLibrary } from 'react-native-library'
 
 const styles = StyleSheet.create({
   h1: {
