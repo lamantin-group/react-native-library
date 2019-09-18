@@ -22,6 +22,6 @@ export class MyLibrary {
 
   static async showMessage(text: string) {
     // console.warn(text)
-    Alert.alert(text)
+    Alert.alert(text, JSON.stringify(NativeModules))
   }
 }

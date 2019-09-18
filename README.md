@@ -51,6 +51,7 @@ Common
 - [x] Automatically generating typings when publish
 - [x] Hot library replacement in development 
 - [x] MIT License template
+- [x] VSCode configuration for run debugger
 - [ ] Hot reloading for example (working only reloading)
 - [ ] CI for checking build status
 
@@ -64,8 +65,8 @@ Android features
 - [ ] Extensions mapper to language types from ReactNative types
 
 iOS features
-- [ ] Swift support for library ios module
-- [ ] iOS library module support
+- [x] iOS library module support
+- [x] Swift support for library ios module
 
 ---
 

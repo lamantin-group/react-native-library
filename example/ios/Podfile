@@ -27,6 +27,9 @@ target 'example' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  # todo: change to node_modules path in real application
+  pod 'MyFramework', :path => '../../ios/MyFramework.podspec'
+
   target 'exampleTests' do
     inherit! :search_paths
     # Pods for testing

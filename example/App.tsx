@@ -9,16 +9,23 @@
  */
 
 import React, { Component, Fragment } from 'react'
-import { StatusBar, Text, View, StyleSheet, Alert } from 'react-native'
+import { StatusBar, Text, View, StyleSheet, Alert, NativeModules } from 'react-native'
 import { Button } from 'react-native-library'
 import { MyLibrary } from '../src/MyLibrary'
+
 const styles = StyleSheet.create({
   h1: {
     fontSize: 24,
   },
 })
+const { NativeLibrary } = NativeModules
 
 export default class App extends Component {
+  componentDidMount() {
+    console.log(NativeModules)
+    console.log(NativeLibrary)
+  }
+
   render() {
     return (
       <View style={{ flex: 1, backgroundColor: 'white', alignItems: 'center' }}>
