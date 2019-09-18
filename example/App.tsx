@@ -9,7 +9,7 @@
  */
 
 import React, { Component, Fragment } from 'react'
-import { StatusBar, Text, View, StyleSheet, Alert, NativeModules } from 'react-native'
+import { StatusBar, Text, View, StyleSheet, Alert, NativeModules, SafeAreaView } from 'react-native'
 import { Button } from 'react-native-library'
 import { MyLibrary } from '../src/MyLibrary'
 
@@ -28,7 +28,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1, backgroundColor: 'white', alignItems: 'center' }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: 'white', alignItems: 'center' }}>
         <StatusBar barStyle="dark-content" />
         <Text style={styles.h1}>react-native-library bootstrap</Text>
         <Button
@@ -44,7 +44,7 @@ export default class App extends Component {
             Alert.alert('Test Native getValue()', result)
           }}
         />
-      </View>
+      </SafeAreaView>
     )
   }
 }
