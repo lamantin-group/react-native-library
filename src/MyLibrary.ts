@@ -1,4 +1,4 @@
-import { NativeModules } from 'react-native'
+import { NativeModules, Alert } from 'react-native'
 
 const { NativeLibrary } = NativeModules
 
@@ -22,6 +22,6 @@ export class MyLibrary {
 
   static async showMessage(text: string) {
     // console.warn(text)
-    alert(text)
+    Alert.alert(text)
   }
 }
