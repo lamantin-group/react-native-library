@@ -57,8 +57,8 @@ Common
 Android features
 - [x] Android min api 16
 - [x] Android target api 29
-- [x] Kotlin 1.3.50 support
-- [x] Gradle 5.4.1
+- [x] Kotlin 1.3.50
+- [x] Gradle 5.6.2
 - [x] Added most popular library-source repositories (jcenter, google, jitpack)
 - [ ] Fix local.properties to work on independent environment
 - [ ] Extensions mapper to language types from ReactNative types

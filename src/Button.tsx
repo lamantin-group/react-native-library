@@ -7,8 +7,15 @@ export class Button extends PureComponent<{
 }> {
   render() {
     return (
-      <TouchableOpacity>
-        <Text onPress={this.props.onPress}>{this.props.text}</Text>
+      <TouchableOpacity
+        onPress={this.props.onPress}
+        style={{
+          backgroundColor: '#e4e4e4',
+          paddingHorizontal: 16,
+          paddingVertical: 8,
+          borderRadius: 4,
+        }}>
+        <Text>{this.props.text}</Text>
       </TouchableOpacity>
     )
   }

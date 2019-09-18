@@ -8,105 +8,36 @@
  * @format
  */
 
-import React, { Fragment } from 'react'
-import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar } from 'react-native'
-
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen'
-
+import React, { Component, Fragment } from 'react'
+import { StatusBar, Text, View, StyleSheet, Alert } from 'react-native'
+import { Button } from 'react-native-library'
+import { MyLibrary } from '../src/MyLibrary'
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
+  h1: {
     fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
   },
 })
 
-import { Button } from 'react-native-library'
-
-const App = () => {
-  const usingHermes = typeof HermesInternal === 'object' && HermesInternal !== null
-
-  return (
-    <Fragment>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView contentInsetAdjustmentBehavior="automatic" style={styles.scrollView}>
-          <Header />
-          <Button text="Hello bitches" />
-          {!usingHermes ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.tsx</Text> to change this screen and then
-                come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </Fragment>
-  )
+export default class App extends Component {
+  render() {
+    return (
+      <View style={{ flex: 1, backgroundColor: 'white', alignItems: 'center' }}>
+        <StatusBar barStyle="dark-content" />
+        <Text style={styles.h1}>react-native-library bootstrap</Text>
+        <Button
+          text="Test JS"
+          onPress={() => {
+            MyLibrary.showMessage('This text passed from app to library')
+          }}
+        />
+        <Button
+          text="Test Native getValue()"
+          onPress={async () => {
+            const result = await MyLibrary.getValue()
+            Alert.alert('Test Native getValue()', result)
+          }}
+        />
+      </View>
+    )
+  }
 }
-
-export default App

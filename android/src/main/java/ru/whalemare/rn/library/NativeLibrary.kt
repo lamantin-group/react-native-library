@@ -18,12 +18,6 @@ class NativeLibrary(val reactContext: ReactApplicationContext) : ReactContextBas
   }
 
   @ReactMethod
-  fun exampleMethod() {
-    // An example native method that you will expose to React
-    // https://facebook.github.io/react-native/docs/native-modules-android.html#the-toast-module
-  }
-
-  @ReactMethod
   fun getValue(promise: Promise) {
     promise.resolve("A real native value")
   }
