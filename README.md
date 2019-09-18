@@ -52,7 +52,7 @@ Common
 - [x] Hot library replacement in development 
 - [x] MIT License template
 - [x] VSCode configuration for run debugger
-- [ ] Hot reloading for example (working only reloading)
+- [ ] Hot reloading for example (working only live reload)
 - [ ] CI for checking build status
 
 Android features
