@@ -39,6 +39,8 @@ Update library info in `package.json` to your own
   }
 ```
 
+If you have a question or need specific feature, feel free to [open an issue](https://github.com/lamantin-group/react-native-library/issues/new) or create pull request.
+
 Roadmap
 --------
 
