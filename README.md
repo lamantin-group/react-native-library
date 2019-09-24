@@ -52,6 +52,7 @@ Common
 - [x] Hot library replacement in development 
 - [x] MIT License template
 - [x] VSCode configuration for run debugger
+- [x] Bug report template in `.github/ISSUE_TEMPLATE` folder
 - [ ] Hot reloading for example (working only live reload)
 - [ ] CI for checking build status
 
